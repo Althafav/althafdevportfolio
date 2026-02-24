@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  /* Premium Theme Colors */
+  --color-accent: #FFD400;
+  --color-background: #ffffff;
+  --color-secondary-background: #FAFAFA;
+  --color-foreground: #0A0A0A;
+
+  /* Extend font family if needed, though Inter is automatic via next/font */
+}
+
+/* Custom Utilities */
+@utility container-custom {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  max-width: 80rem;
+  width: 100%;
+}
+
+@utility bg-dot-pattern {
+  background-image: radial-gradient(#e5e5e5 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@utility bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+}
+
+/* Base Styles */
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply antialiased min-h-screen overflow-x-hidden bg-dot-pattern;
+  }
+
+  ::selection {
+    background-color: var(--color-accent);
+    color: var(--color-foreground);
+  }
+}
+
+/* GSAP / Lenis Specifics if needed */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
