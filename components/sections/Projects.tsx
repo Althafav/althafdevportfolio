@@ -84,10 +84,10 @@ export default function Projects() {
                             key={index}
                             className={`group relative grid md:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'md:grid-flow-col-dense' : ''}`}
                         >
-                            <div className={`project-card relative rounded-3xl overflow-hidden shadow-2xl shadow-black/5 border border-black/5 aspect-[4/3] ${index % 2 === 1 ? 'md:col-start-2' : ''}`} style={{ transformStyle: "preserve-3d" }}>
+                            <div className={`project-card relative rounded-3xl overflow-hidden shadow-2xl shadow-black/5 border border-black/5 aspect-4/3 ${index % 2 === 1 ? 'md:col-start-2' : ''}`} style={{ transformStyle: "preserve-3d" }}>
                                 <div className="absolute inset-0 bg-secondary-background flex items-center justify-center group-hover:scale-105 transition-transform duration-700 ease-out">
                                     {/* Placeholder or Image */}
-                                    <span className="text-9xl font-black text-black/[0.03] select-none">{index + 1}</span>
+                                    <span className="text-9xl font-black text-black/3 select-none">{index + 1}</span>
                                 </div>
                                 <div className="absolute inset-0 ring-1 ring-inset ring-black/5 rounded-3xl" />
                             </div>
@@ -109,7 +109,7 @@ export default function Projects() {
                                 </ul>
                                 <div className="flex items-center gap-4">
                                     <Link href={project.link} target="_blank" rel="noopener noreferrer">
-                                        <Button magnetic className="group-hover:bg-accent group-hover:text-black hover:!bg-accent hover:!text-black">
+                                        <Button magnetic className="group-hover:bg-accent group-hover:text-black hover:bg-accent! hover:text-black!">
                                             Visit Website <ArrowUpRight className="ml-2 w-4 h-4" />
                                         </Button>
                                     </Link>

@@ -36,7 +36,7 @@ export default function Hero() {
             <div className="container-custom mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
                 <div ref={textRef} className="order-2 md:order-1 relative">
                     {/* Architectural Watermark */}
-                    <span className="absolute -top-20 -left-20 text-[10rem] md:text-[12rem] font-black text-black/[0.03] pointer-events-none select-none leading-none z-0">
+                    <span className="absolute -top-20 -left-20 text-[10rem] md:text-[12rem] font-black text-black/3 pointer-events-none select-none leading-none z-0">
                         PORT
                         <br />
                         FOLIO
