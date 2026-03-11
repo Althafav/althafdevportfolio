@@ -119,13 +119,13 @@ export default function Projects() {
                     ))}
                 </div>
 
-                <div className="mt-32 text-center md:hidden">
+                {/* <div className="mt-32 text-center md:hidden">
                     <Link href="#projects">
                         <Button variant="outline">
                             View All Projects
                         </Button>
                     </Link>
-                </div>
+                </div> */}
             </div>
         </Container>
     );

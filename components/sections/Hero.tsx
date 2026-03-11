@@ -46,9 +46,9 @@ export default function Hero() {
                         <span className="hero-text-element inline-block py-1 px-3 border border-black/10 rounded-full bg-white/50 backdrop-blur-sm text-xs font-bold uppercase tracking-[0.2em] mb-6">
                             Est. {new Date().getFullYear()}
                         </span>
-                        <h1 className="hero-text-element text-6xl md:text-8xl lg:text-9xl font-black leading-[0.9] tracking-tighter mb-8 mix-blend-multiply">
+                        <h1 className="hero-text-element text-5xl md:text-8xl lg:text-9xl font-black leading-[0.9] tracking-tighter mb-8 mix-blend-multiply">
                             CRAFTING <br />
-                            <span className="text-outline-premium text-transparent bg-clip-text bg-gradient-to-b from-black to-black/60">
+                            <span className="text-outline-premium text-transparent bg-clip-text bg-linear-to-b from-black to-black/60">
                                 DIGITAL
                             </span> <br />
                             EXPERIENCES
@@ -72,7 +72,7 @@ export default function Hero() {
                 </div>
 
                 <div className="hero-visual order-1 md:order-2 flex justify-center items-center relative">
-                    <div className="relative w-64 h-64 md:w-[30rem] md:h-[30rem]">
+                    <div className="relative w-64 h-64 md:w-120 md:h-120">
                         {/* Circle decorative elements */}
                         <div className="absolute inset-0 border border-black/5 rounded-full animate-[spin_10s_linear_infinite]" />
                         <div className="absolute inset-4 border border-black/5 rounded-full animate-[spin_15s_linear_infinite_reverse]" />
