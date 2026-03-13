@@ -70,6 +70,16 @@ export const projects = [
     link: "https://committee-payment-tracker.vercel.app",
     tags: ["React", "Supabase", "Tailwind CSS"],
   },
+
+  {
+    title: "Tycoons",
+    category: "Event Website",
+    image: "/images/project4.jpg",
+    description:
+      "A premium event platform designed for The Tycoons, showcasing influential business leaders, investors, and innovators from around the world. The website features a modern, high-performance interface with dynamic content management, smooth animations, and responsive layouts to deliver an engaging experience for global audiences.",
+    link: "https://www.thetycoons.com/",
+    tags: ["Next.js", "Tailwind CSS", "GSAP", "Headless CMS"],
+  },
   {
     title: "AIM Congress",
     category: "Event Website",
